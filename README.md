@@ -1,4 +1,4 @@
-# Scholarly Publications Fetcher 
+# Scholarly Publications Fetcher  [![PyPI](https://img.shields.io/pypi/v/scholarly_publications?color=blue)](https://pypi.org/project/scholarly_publications)
 
 The `scholarly_publications` package provides an easy-to-use interface for fetching publication data from Google Scholar. It allows users to retrieve detailed information about an author's publications, including titles, publication years, links, and citation counts. This package is designed for academics, researchers, and anyone interested in programmatically analyzing scholarly publication data.
 
