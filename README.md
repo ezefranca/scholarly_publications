@@ -1,4 +1,4 @@
-# Scholarly Publications Fetcher
+# Scholarly Publications Fetcher [![Upload Python Package](https://github.com/ezefranca/scholarly_publications/actions/workflows/workflow.yml/badge.svg)](https://github.com/ezefranca/scholarly_publications/actions/workflows/workflow.yml)
 
 The `scholarly_publications` package provides an easy-to-use interface for fetching publication data from Google Scholar. It allows users to retrieve detailed information about an author's publications, including titles, publication years, links, and citation counts. This package is designed for academics, researchers, and anyone interested in programmatically analyzing scholarly publication data.
 
