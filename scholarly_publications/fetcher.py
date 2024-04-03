@@ -60,7 +60,7 @@ def parse_publications(soup):
     publications_list = []
     for row in soup.select('.gsc_a_tr'):
         title_element = row.select_one('.gsc_a_at')
-        title = title_element.text if title_element else "No title"
+        title = title_element.text.replace(':', ' -') if title_element else "No title"
         year_element = row.select_one('.gsc_a_h')
         year = year_element.text if year_element else "No year"
         link = f'https://scholar.google.com{title_element["href"]}' if title_element else "No link"
