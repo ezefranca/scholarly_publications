@@ -13,7 +13,7 @@ COOKIES = {
     'CONSENT': 'PENDING+300',
 }
 
-def fetch_all_publications(author_id, max_publications=None):
+def fetch_all_publications(author_id, max_publications=None, sortby='cited'):
     all_publications = []
     start_index = 0
     page_size = 100
@@ -28,6 +28,7 @@ def fetch_all_publications(author_id, max_publications=None):
             'oi': 'ao',
             'cstart': start_index,
             'pagesize': page_size,
+            'sortby': sortby
         }
 
         response = requests.get('https://scholar.google.com/citations', params=params, cookies=COOKIES, headers=HEADERS)

@@ -26,18 +26,26 @@ Fetch a specific number of publications for a given author ID:
 scholarly_publications <author_id> --max=<number_of_publications>
 ```
 
+Sort results by pubdate/cited:
+```bash
+scholarly_publications <author_id> --sortby=<pubdate/cited>
+```
+
 ### Using as a Python Package
 
 You can also use `scholarly_publications` directly in your Python code. Here's how:
 
 ```python
-from scholarly_publications import fetch_all_publications
+from scholarly_publications import fetch_publications
 
 # Fetch all publications for a given author ID
-publications = fetch_all_publications('<author_id>')
+publications = fetch_publications('<author_id>')
 
 # Fetch a specific number of publications for a given author ID
-publications = fetch_all_publications('<author_id>', max_publications=<number_of_publications>)
+publications = fetch_publications('<author_id>', max_publications=<number_of_publications>)
+
+# Fetch all publications for a given author ID and sort by pubdate/cited
+publications = fetch_publications('<author_id>', sortby='<pubdate/cited>')
 
 print(publications)
 ```
