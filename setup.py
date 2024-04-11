@@ -7,7 +7,7 @@ here = path.abspath(path.dirname(__file__))
 with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
-version = '0.5'
+version = '0.6'
 
 setup(
     name='scholarly_publications',
